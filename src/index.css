@@ -1,13 +1,274 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  /* font-family: 'EB Garamond', serif; */
+  font-family: 'Roboto', sans-serif;
+}
+:root {
+  --darkblue: #14212e;
+  --darkgold: #7b603f;
+  --light: #fff;
+  --bk: #000;
+  --shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/*----utilities-------*/
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+.sm-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.card {
+  /*utility*/
+  background-color: var(--darkblue);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  padding: 20px;
+}
+.btn {
+  display: block;
+  padding: 20px 10px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.grid {
+  /*utility grid*/
+  display: grid;
+  grid-template-columns: repeat(
+    2,
+    1fr
+  ); /*repeat twice of 1 fraction for each element*/
+  gap: 20px; /*create space in between*/
+  justify-content: center;
+  align-items: center;
+  height: 100%; /*showcase has 400px height so set container full height which push element in the middle*/
+}
+
+.grid-1 {
+  grid-template-columns: 1fr;
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-4 {
+  grid-template-columns: 1fr 1fr 1fr 0.5fr;
+}
+.text-center {
+  text-align: center;
+}
+
+/*Margin vertical utility*/
+.my-1 {
+  margin: 1rem 0;
+}
+
+.my-2 {
+  margin: 1.5rem 0;
+}
+
+.my-3 {
+  margin: 2rem 0;
+}
+
+.my-4 {
+  margin: 3rem 0;
+}
+
+.my-5 {
+  margin: 3rem 0;
+}
+
+.m-1 {
+  margin: 1rem;
+}
+
+.m-2 {
+  margin: 1.5rem;
+}
+
+.m-3 {
+  margin: 2rem;
+}
+
+.m-4 {
+  margin: 3rem;
+}
+
+.m-5 {
+  margin: 4rem;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+
+.py-2 {
+  padding: 1.5rem 0;
+}
+
+.py-3 {
+  padding: 2rem 0;
+}
+
+.py-4 {
+  padding: 3rem 0;
+}
+
+.py-5 {
+  padding: 4rem 0;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.p-2 {
+  padding: 1.5rem;
+}
+
+.p-3 {
+  padding: 2rem;
+}
+
+.p-4 {
+  padding: 3rem;
+}
+
+.p-5 {
+  padding: 3rem;
+}
+.bg-db,
+.btn-db {
+  background-color: var(--darkblue);
+  color: var(--light);
+}
+
+.btn-dg {
+  background-color: var(--darkblue);
+  border: 2px var(--darkgold) solid;
+  color: var(--darkgold);
+}
+
+.bg-dark,
+.btn-dark {
+  background-color: var(--bk);
+  color: var(--light);
+}
+.bg-light,
+.btn-light {
+  background-color: var(--light);
+  color: var(--bk);
+}
+
+.bg-light a,
+.btn-light a,
+.bg-dark a,
+.btn-dark a,
+.bg-db a,
+.btn-db a,
+.btn-btn-dg a {
+  color: var(--light);
+}
+
+/*Text*/
+.text-bk {
+  color: var(--darkblue);
+}
+
+.text-bk {
+  color: var(--bk);
+}
+.text-light {
+  color: var(--light);
+}
+
+.text-dg {
+  color: var(--darkgold);
+}
+
+.lead {
+  font-size: 20px;
+}
+
+.sm {
+  font-size: 1rem;
+}
+
+.md {
+  font-size: 2rem;
+}
+
+.lg {
+  font-size: 3rem;
+}
+
+.xl {
+  font-size: 4rem;
+}
+
+/*------animation-------*/
+@keyframes slideInFromLeft {
+  0% {
+    /*begin from left to normal position*/
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    /*begin from right to normal position*/
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    /*begin from top to normal position*/
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    /*begin from top to normal position*/
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }

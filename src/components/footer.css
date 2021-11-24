@@ -1,0 +1,36 @@
+.footer {
+  border-top: 2px var(--darkgold) solid;
+}
+
+.footer .container {
+  padding: 50px 0;
+}
+.footer-group {
+  align-self: start;
+}
+.footer-group img {
+  width: 5rem;
+  padding-bottom: 5px;
+}
+
+.footer .time {
+  width: 7rem;
+}
+
+.footer .call {
+  width: 4.5rem;
+}
+
+.footer-group {
+  align-self: center;
+}
+
+.footer-group i {
+  padding: 10px;
+}
+@media screen and (max-width: 768px) {
+  .footer .grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+}

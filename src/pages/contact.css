@@ -1,0 +1,29 @@
+.contact-section h1 {
+  font-family: 'EB Garamond', serif;
+}
+
+.contact-section .flex {
+  flex-wrap: wrap;
+}
+.form-size {
+  width: 35rem;
+  margin-bottom: 2rem;
+}
+.contactUsP {
+  margin: 1rem;
+}
+.contact-section label {
+  padding-left: 1.5rem;
+  margin-top: 1rem;
+}
+.contact-section input {
+  width: 90%;
+  padding: 0.8rem;
+  margin: 1.5rem;
+}
+.contact-section textarea {
+  width: 90%;
+  height: 15rem;
+  resize: none;
+  margin: 1.5rem;
+}

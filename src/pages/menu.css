@@ -1,0 +1,25 @@
+.menu-section {
+  padding: 40px;
+}
+
+.menu-section h1 {
+  font-family: 'EB Garamond', serif;
+}
+
+.menu-section img {
+  justify-self: center;
+}
+
+.menu-section .flex {
+  flex-wrap: wrap;
+}
+
+.menu-section .btn {
+  width: 12rem;
+  margin-left: auto;
+  margin-right: 5rem;
+}
+.menu-section .btn:hover {
+  color: var(--darkgold);
+  transform: scale(0.98);
+}

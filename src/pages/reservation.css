@@ -1,0 +1,251 @@
+nav h1 {
+  font-family: 'EB Garamond', serif;
+}
+.wrapper {
+  height: 1000px;
+}
+.reservation-section .container {
+  max-width: 36rem;
+  height: 1000px;
+}
+.reservation-card {
+  background-color: var(--light);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  padding: 20px;
+  width: 100%;
+  margin: 0 auto;
+  height: 700px;
+}
+
+.reservation-section h1 {
+  padding-top: 2rem;
+  font-size: 2rem;
+}
+
+.card-container {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 1rem 20px;
+  height: 500px;
+}
+
+.card-square-outline {
+  border: 1px var(--bk) solid;
+  width: 100%;
+  height: 600px;
+  margin: 1rem auto;
+}
+
+.card-container .grid-1 {
+  grid-template-columns: 1fr;
+  grid-template-rows: 9rem 9rem 2rem 2rem;
+}
+
+.step {
+  color: var(--bk);
+}
+
+.step-outline {
+  background-color: var(--darkblue);
+  padding: 12px 5px;
+  border-radius: 50%;
+  width: 3rem;
+  margin: 1.5rem auto;
+  position: relative;
+  z-index: 1;
+  display: block;
+}
+.step {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.step p {
+  font-size: 18px;
+  color: var(--light);
+  z-index: 1;
+}
+
+.step-outline:before,
+.step-outline:after {
+  position: absolute;
+  content: '';
+  height: 6px;
+  width: 10.5rem;
+  bottom: 19px;
+  right: -10.5rem;
+  z-index: -10;
+  background-color: var(--darkgold);
+}
+
+.step-group:last-child .step-outline:before,
+.step-group:last-child .step-outline:after {
+  display: none;
+}
+.step-group {
+  padding: 0 3rem;
+}
+
+.card-container .flex {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+.select-section {
+  padding-top: 20px;
+}
+.select-section select {
+  border-radius: 2px;
+  width: 10rem;
+  height: 2.5rem;
+  font-size: 14px;
+  justify-self: center;
+  padding: 5px 0;
+  margin-top: 1rem;
+}
+.fa {
+  font-family: 'Font Awesome/ 5 Free';
+  display: inline-block;
+}
+.select-section input {
+  border-radius: 2px;
+  width: 10rem;
+  height: 2.5rem;
+  font-size: 14px;
+  justify-self: center;
+  margin-top: 1rem;
+}
+.termsAndCondition {
+  align-self: start;
+  background-color: rgba(78, 78, 78, 0.259);
+  text-align: center;
+  padding: 20px;
+  border: 1px var(--bk) solid;
+  width: 80%;
+  height: 8rem;
+  margin: 0 auto;
+  overflow: hidden scroll;
+}
+.termsAndCondition p {
+  color: var(--bk);
+  font-size: 12px;
+}
+
+.agreecheck {
+  justify-self: center;
+  padding: 0 15px;
+  margin: 1rem 1rem;
+}
+.submit-btn {
+  margin: 0 20px;
+}
+input[type='submit'][disabled] {
+  background-color: grey;
+  color: rgb(105, 104, 104);
+  border: 2px grey solid;
+  padding: 20px;
+}
+
+@media screen and(max-width:700px) {
+  .reservation-section .reservation-card {
+    background-color: var(--light);
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    padding: 20px;
+    width: 25rem;
+    justify-self: center;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .reservation-card {
+    background-color: var(--light);
+    border-radius: 0px;
+    box-shadow: var(--shadow);
+    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+    height: 700px;
+  }
+  .card-container {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 550px;
+  }
+  .card-container .grid-1 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 15rem 9rem 2rem 4rem;
+  }
+
+  .card-container.select-section.grid {
+    grid-template-columns: 1fr;
+  }
+  .step-group {
+    padding: 0 3.5rem;
+  }
+  .select-section select {
+    width: 100%;
+  }
+
+  .select-section input {
+    width: 100%;
+  }
+  .step-group span {
+    display: none;
+  }
+  .reservation-section h1 {
+    padding-top: 2rem;
+    font-size: 1.5rem;
+  }
+  .step-outline:before,/*progress step*/
+  .step-outline:after {
+    position: absolute;
+    content: '';
+    height: 6px;
+    width: 9.5rem;
+    bottom: 19px;
+    right: -9.5rem;
+    z-index: -10;
+    background-color: var(--darkgold);
+  }
+
+  .termsAndCondition {
+    background-color: rgba(78, 78, 78, 0.259);
+    text-align: center;
+    padding: 20px;
+    border: 1px var(--bk) solid;
+    width: 80%;
+    height: 8rem;
+    margin: 1rem auto;
+    overflow: hidden scroll;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .step-outline:before,/*progress step*/
+  .step-outline:after {
+    position: absolute;
+    content: '';
+    height: 6px;
+    width: 6rem;
+    bottom: 19px;
+    right: -6rem;
+    z-index: -1;
+    background-color: var(--darkgold);
+  }
+  .step-group {
+    padding: 0 3rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .step-group {
+    padding: 0 2.5rem;
+  }
+  .card-container {
+    width: 100%;
+    height: 550px;
+  }
+}

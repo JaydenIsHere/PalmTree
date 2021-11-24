@@ -1,0 +1,79 @@
+.about-head {
+  background-image: url('../images/about-bar.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+
+.about-head h1 {
+  font-family: 'EB Garamond', serif;
+}
+
+.about-sub-head {
+  border-top: 3px var(--darkgold) solid;
+}
+
+.about-sub-head p {
+  margin: 5rem;
+  padding: 3rem;
+  line-height: 2rem;
+}
+
+.about-team img {
+  width: 35rem;
+  justify-self: center;
+  margin: 2rem;
+}
+.LeadStaff p {
+  margin: 0;
+  padding: 1.5px 0;
+}
+
+.LeadStaff .nameAndTile {
+  padding: 8px 0;
+}
+
+.about-team .btn {
+  margin-top: 5rem;
+  width: 12rem;
+  justify-self: center;
+}
+.about-team .btn:hover {
+  color: var(--darkgold);
+  transform: scale(0.98);
+}
+
+@media screen and (max-width: 650px) {
+  .about-sub-head p {
+    margin: 3rem;
+    padding: 1rem;
+    line-height: 1.5rem;
+  }
+  .LeadStaff p {
+    margin: 0;
+    padding: 1.5px 0;
+  }
+  .about-team img {
+    width: 25rem;
+    justify-self: center;
+    margin: 2rem 3rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .about-sub-head p {
+    margin: 1rem;
+    padding: 0.5rem;
+    line-height: 1.5rem;
+  }
+  .LeadStaff p {
+    margin: 0;
+    padding: 1.5px 0;
+  }
+  .about-team img {
+    width: 20rem;
+    justify-self: center;
+    margin: 2rem 3rem;
+  }
+}

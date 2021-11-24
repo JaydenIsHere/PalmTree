@@ -1,0 +1,27 @@
+.card {
+  border: 3px var(--darkgold) solid;
+  margin-top: 20px;
+  width: 15rem;
+  transition: transform 0.4s ease;
+  margin: 1.5rem 2rem;
+}
+
+.card img {
+  justify-self: center;
+  width: 11rem;
+  height: 8rem;
+}
+
+.card h2 {
+  font-family: 'EB Garamond', serif;
+  justify-self: center;
+}
+
+.card p {
+  justify-self: end;
+  font-size: 20px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}

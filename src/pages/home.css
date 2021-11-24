@@ -1,0 +1,93 @@
+.showcase {
+  background: url('../images/bar.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 800px;
+}
+.showcase img {
+  max-width: 25rem;
+  justify-self: center;
+  align-self: end;
+}
+
+.showcase .grid {
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 1fr;
+}
+
+.showcase-text {
+  font-size: 1.5rem;
+  align-self: start;
+  margin: 0 20px;
+}
+
+/*showcase2*/
+.showcase2 {
+  border-top: 2px var(--darkgold) solid;
+}
+
+.showcase-info img {
+  width: 5rem;
+}
+
+.showcase-info .drink {
+  width: 5.5rem;
+}
+
+.showcase-info .event {
+  width: 6rem;
+}
+.slogan {
+  height: 300px;
+}
+.slogan h1 {
+  font-family: 'EB Garamond', serif;
+  margin: 5rem;
+  padding: 20px;
+  font-size: 3.8rem;
+}
+
+.callAction img {
+  width: 25rem;
+  justify-self: center;
+}
+
+.callAction p {
+  font-size: 20px;
+}
+@media screen and (max-width: 768px) {
+  .showcase img {
+    max-width: 22rem;
+  }
+  .showcase-text {
+    font-size: 1rem;
+  }
+  .showcase2 .grid-3,
+  .showcase2 .grid {
+    grid-template-columns: 1fr;
+  }
+  .showcase-info {
+    padding: 1rem;
+  }
+  .showcase2 h1 {
+    font-size: 3.3rem;
+  }
+  .callAction p {
+    text-align: center;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .slogan h1 {
+    font-family: 'EB Garamond', serif;
+    margin: 2rem;
+    font-size: 2.5rem;
+  }
+
+  .callAction img {
+    width: 18rem;
+    justify-self: center;
+  }
+}
