@@ -27,6 +27,10 @@
   border-top: 2px var(--darkgold) solid;
 }
 
+.showcase2 .showcase2-wrapper {
+  padding-top: 8rem;
+}
+
 .showcase-info img {
   width: 5rem;
 }

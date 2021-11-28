@@ -47,7 +47,7 @@ nav h1 {
 }
 
 .step-outline {
-  background-color: var(--darkblue);
+  background-color: grey;
   padding: 12px 5px;
   border-radius: 50%;
   width: 3rem;
@@ -55,6 +55,9 @@ nav h1 {
   position: relative;
   z-index: 1;
   display: block;
+}
+.step-group:first-child .step-outline {
+  background-color: var(--darkblue);
 }
 .step {
   max-width: 600px;

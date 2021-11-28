@@ -66,14 +66,7 @@ const [check , setCheck] = useState(false)
 <input type="date" id="date" name="date"/>
 
 
-<select name="time" id="time">
-    <option value="1">Time</option>
-    <option value="1">4:00 pm</option>
-    <option value="2">4:15 pm</option>
-    <option value="3">4:30 pm</option>
-    <option value="4">4:45 pm</option>
-    <option value="5">5:00 pm</option>
-</select>
+<input type="time" step="300" id="time" name="time"  min="16:00" max="23:00"/>
     </div>
 
 <div className="termsAndCondition p-2">
